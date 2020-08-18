@@ -56,3 +56,26 @@ var myObj = {
 
 var propertyName = "prop1";
 console.log("" + myObj [propertyName]);
+
+//Nested objects property (dot and square notation interchenged)
+
+var myObj1 = {
+    "prop1" : "hello",
+    "prop2" : 123,
+    "prop3" : true,
+    "myObj2" : {
+        "innerProp" : "inner property"
+    }
+};
+
+
+console.log("access the inner object");
+console.log(myObj1.myObj2);
+console.log("access the inner object property"  +"    " + myObj1.myObj2.innerProp);
+
+//add a new property into the existing object
+
+myObj1.myObj2.newInnerProperty = "hello New Property";
+
+console.log("add a new property into the existing object") ;
+console.log( myObj1);
