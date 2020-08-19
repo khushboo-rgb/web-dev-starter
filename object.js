@@ -1,3 +1,4 @@
+console.log("WELCOME KHUSHBOO shrivastava");
 //its a string
 var myObj = "hello";
 console.log(myObj);
@@ -79,3 +80,44 @@ myObj1.myObj2.newInnerProperty = "hello New Property";
 
 console.log("add a new property into the existing object") ;
 console.log( myObj1);
+
+// use (=== ) for object comparison it compares whether two objects are poiniting to same location or not
+
+var myObj1 = {
+    "prop1" : "hello",
+    "prop2" : 123,
+    "prop3" : true,
+    "myObj2" : {
+        "innerProp" : "inner property"
+    }
+};
+
+// objects are pointing two the same location gives true
+
+var myObj3 = myObj1;
+console.log( myObj3.prop1);
+
+if( myObj1 === myObj3)
+{
+    console.log("equals");
+}
+else
+console.log("not equals");
+
+var myObj4 = {
+    "prop1" : "hello",
+    "prop2" : 123,
+    "prop3" : true,
+    "myObj2" : {
+        "innerProp" : "inner property"
+    }
+};
+
+//here this two objects are not pointing to the same location gives false
+
+if( myObj1 === myObj4)
+{
+    console.log("equals");
+}
+else
+console.log("not equals");
